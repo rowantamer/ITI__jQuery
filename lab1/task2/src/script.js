@@ -1,21 +1,35 @@
+let flag = true;
 $(function () {
-    $("#slideCont1").on("click", function () {
-        $(".slide1").fadeIn();
+    $(".slide1").on("click", function () {
+        if (flag) {
+            $("#slideCont1").fadeOut();
+            flag = false;
+        }
+        else {
+            $("#slideCont1").fadeIn();
+            flag = true;
+        }
     });
-$(".slide1").hover(function () {
-    $(".slide1").fadeOut();
-});
-$("#slideCont2").on("click", function () {
-    $(".slide2").fadeIn();
-});
-$(".slide2").hover(function () {
-$(".slide2").fadeOut();
-});
-$("#slideCont3").on("click", function () {
-    $(".slide3").fadeIn();
-});
-$(".slide3").hover(function () {
-$(".slide3").fadeOut();
-});
+    $(".slide2").on("click", function () {
+        if (flag) {
+            $("#slideCont2").fadeOut();
+            flag = false;
+        }
+        else {
+            $("#slideCont2").fadeIn();
+            flag = true;
+        }
+    });
+    $(".slide3").on("click", function () {
+        if (flag) {
+            $("#slideCont3").fadeOut();
+            flag = false;
+        }
+        else {
+            $("#slideCont3").fadeIn();
+            flag = true;
+        }
+    });
+
 
 })

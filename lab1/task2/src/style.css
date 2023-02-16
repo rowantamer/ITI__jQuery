@@ -1,22 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: none;height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #wrapper{
     display: flex;
-    height: 95%;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
 }
 
 .container{
     display: flex;
     flex-direction: column;
-    height: 95%;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+   
 }
 
 .container img{
-    width: 40%;
-    height: 30%;
+    width: 50%;
+    cursor: pointer;
 }
 
 .container p{
-    width: 30%;
-    height: 50%;
+    width: 50%;
     font-size: medium;
 }
